@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/siteIcon.png" type="image/x-icon">
+    <title>Tic-Tac-Toe</title>
+
+    <!-- Styles for website -->
+    <link rel="stylesheet" href="styles/site.css">
+
+    <!-- Styles for this page only -->
+    <link rel="stylesheet" href="styles/ticTacToe.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fredoka+One&family=Indie+Flower&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- JS for website -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="scripts/app.js"></script>
+    
+    <!-- JS for this page only -->
+    <script defer src="scripts/ticTacToe.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <a class="arcadeLink" href="index.html">ARCADE</a>
+
+        <nav>
+            <a class="wacAMoleLink" href="wacAMole.html">Wack-A-Mole</a>
+            <a class="snakeLink" href="snake.html">Snake</a>
+            <a class="ticTacToeLink" href="ticTacToe.html">Tic-Tac-Toe</a>
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="gameScreen">
+
+            <!-- Game Board -->
+            <section class="board ticTacToeText">
+        
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+    
+            </section>
+
+            <section class="menu">
+
+                
+                <!-- Options Menu -->
+                <div class="options">
+
+
+                    <h2 class="ticTacToeText ticTacToeColor">Tic Tac Toe</h2>
+
+                    <div class="switchGameType">
+                        <button id="switchToSingle">One Player</button>
+                        <button id="switchToMulti">Two Player</button>
+                    </div>
+
+                    <div class="onePlayerForm">
+
+                        <h3>One Player</h3>
+
+                        <div>
+                            <label>Player Name</label>
+                            <input class="playerInpt" type="text">
+                        </div>
+    
+                        <button class="startOnePlayer">Enter</button>
+                    </div>
+
+                    <div class="twoPlayerForm displayNone">
+
+                        <h3>Two Player</h3>
+
+                        <div>
+                            <label>Player 1 Name</label>
+                            <input class="playerOneInpt" type="text">
+                        </div>
+    
+                        <div>
+                            <label>Player 2 Name</label>
+                            <input class="playerTwoInpt" type="text">
+                        </div>
+    
+                        <button class="startTwoPlayer">Enter</button>
+                    </div>
+
+                </div>
+
+                <!-- Start Menu -->
+                <div class="start displayNone">
+
+                    <h2 class="ticTacToeText ticTacToeColor">Tic Tac Toe</h2>
+
+                    <div>
+                        <h3><span class="playerOneName">Player 1</span> (<span class="ticTacToeText ticTacToeColor">X</span>): <span class="playerOneScore">0</span></h3>
+                        <h3><span class="playerTwoName">Player 2</span> (<span class="ticTacToeText ticTacToeColor">O</span>): <span class="playerTwoScore">0</span></h3>
+                    </div>
+
+                    <h2 class="result">Have Fun!</h2>
+
+                    <button class="playAgain">Play</button>
+
+                </div>
+                
+            </section>
+        </div>
+
+    </main>
+
+</body>
+</html>

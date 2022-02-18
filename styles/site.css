@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box; 
+}
+
+h1{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background-color: darkslategrey;
+}
+
+/* HEADER */
+
+header{
+    box-shadow: 0 1px 4px -2px black;
+    height: 4vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+    font-size: 2rem;
+    color: white;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 1vw;
+}
+
+/* MAIN */
+
+main{
+    min-height: 96vh;
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+
+body{
+    margin: 0;
+    background-color: darkslategray;
+}
+
+.switchGameType{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.switchGameType button{    
+    font-size: 1em;
+    margin: 15px;
+    padding: 1% 5%;
+}
+
+.easy{
+    background-color:lightgreen;
+    border: 0;
+
+}
+
+.medium{
+    background-color:lightsalmon;
+    border: 0;
+}
+
+.hard{
+    background-color:lightcoral;
+    border: 0;
+}
+
+.arcadeText{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.wacAMoleText{
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.snakeText{
+    font-family: 'Black Ops One', cursive;
+}
+
+
+.ticTacToeText{
+    font-family: 'Indie Flower', cursive;
+}
+
+.arcadeLink{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.arcadeLink:hover{
+    color: yellow;
+}
+
+.wacAMoleLink{
+    font-family: 'Fredoka One', cursive;
+}
+
+.wacAMoleLink:hover{
+    color: burlywood;
+}
+
+.snakeLink{
+    font-family: 'Black Ops One', cursive;
+}
+
+.snakeLink:hover{
+    color: lime;
+}
+
+.ticTacToeLink{
+    font-family: 'Indie Flower', cursive;
+}
+
+.ticTacToeLink:hover{
+    color: orange;
+}
+
+.inFront{
+    z-index: 1;
+}
+
+.displayNone{
+    display: none;
+}

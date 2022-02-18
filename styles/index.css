@@ -1,0 +1,26 @@
+.tempClass h1{
+    font-size: 4em;
+    margin-top: 2%;
+    margin-bottom: 15%;
+}
+
+.tempClass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tempClass a{
+    font-size: 3em;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 15%;
+}
+
+.gamesList{
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}

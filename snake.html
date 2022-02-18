@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/siteIcon.png" type="image/x-icon">
+    <title>Snake</title>
+
+    <!-- Styles for website -->
+    <link rel="stylesheet" href="styles/site.css">
+
+    <!-- Styles for this site only -->
+    <link rel="stylesheet" href="styles/snake.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fredoka+One&family=Indie+Flower&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- JS for website -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="scripts/app.js"></script>
+    
+    <!-- JS for this page only -->
+    <script defer src="scripts/snake.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <a class="arcadeLink" href="index.html">ARCADE</a>
+
+        <nav>
+            <a class="wacAMoleLink" href="wacAMole.html">Wack-A-Mole</a>
+            <a class="snakeLink" href="snake.html">Snake</a>
+            <a class="ticTacToeLink" href="ticTacToe.html">Tic-Tac-Toe</a>
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="gameScreen">
+
+            <!-- Game Board -->
+            <section class="board">
+                
+                <div class="gameHeading">
+                    <h2>Snake Length <span id="snakeLengthCounter" class="snakeLength">4</span></h2>
+                </div>
+        
+
+                <div class="boardGrid">
+
+                </div>
+                
+            </section>
+
+            <section class="menu">
+
+                <!-- Start Menu -->
+                <div class="start">
+
+                    <h2 class="snakeText snakeLength">SNAKE</h2>
+
+                    <div class="switchGameType">
+                        <button id="difficultyEasy" class="easy tempButton">Easy</button>
+                        <button id="difficultyMedium" class="tempButton">Medium</button>
+                        <button id="difficultyHard" class="tempButton">Hard</button>
+                    </div>
+
+                    <div class="snakeInfo">
+                        <h3>Snake Length: <span id="snakeLength" class="snakeLength">4</span></h3>
+                        <h3>Heighest Length: <span id="heightestScore" class="snakeLength">NA</span></h3>
+                        <h3>Average Length: <span id="averageLength" class="snakeLength">NA</span></h3>
+                    </div>
+
+                    <h2 class="result">Have Fun!</h2>
+
+                    <button class="playAgain">Play</button>
+
+                </div>
+                
+            </section>
+        </div>
+
+    </main>
+
+</body>
+</html>
